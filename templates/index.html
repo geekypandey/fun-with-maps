@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8">
+	<title>Fun with maps!</title>
+</head>
+<body>
+	<h1>Fun with Maps</h1>
+	<table>
+		<tr>
+			<th>Sr. No.</th>
+			<th>Country</th>
+			<th>Capital</th>
+			<th>Continent</th>
+		</tr>
+		{%for i, (country, capital, continent) in data%}
+		<tr>
+			<td>{{i}}</td>
+			<td>{{country}}</td>
+			<td>{{capital}}</td>
+			<td>{{continent}}</td>
+		</tr>
+		{%endfor%}
+	</table>
+</body>
+</html>
+
